@@ -11,7 +11,7 @@ const httpApp = http.createServer (app)
 const io = socket (httpApp)
 
 // Init PORT
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 // Routes
 app.get ("/", (req, res) => {
